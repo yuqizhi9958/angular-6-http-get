@@ -1,0 +1,6 @@
+<ul *ngIf="newsList">
+  <li *ngFor="let item of newsList.result">
+    {{item.title}}
+  </li>
+</ul>
+<button (click)="getData()">接收数据</button>
